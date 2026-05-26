@@ -22,9 +22,9 @@ export default function Hero() {
       {/* Full-bleed background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/7693685/pexels-photo-7693685.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src="/hero_bg.png"
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
           loading="eager"
         />
       </div>

@@ -52,26 +52,26 @@ export default function WhyIndia() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/8828597/pexels-photo-8828597.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="World map with global business connections"
+                src="/india_globe.png"
+                alt="World map showing India as global operations hub with connections to all continents"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/10 to-transparent" />
 
               {/* India pin */}
-              <div className="absolute top-1/2 left-[65%] -translate-y-1/2">
+              <div className="absolute top-[52%] left-[61%] -translate-y-1/2">
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={isInView ? { scale: 1 } : {}}
                   transition={{ duration: 0.4, delay: 0.6 }}
                 >
                   <div className="relative">
-                    <MapPin size={32} className="text-accent drop-shadow-lg" />
+                    <MapPin size={28} className="text-accent drop-shadow-lg" />
                     <motion.div
-                      animate={{ scale: [1, 1.5, 1] }}
+                      animate={{ scale: [1, 1.8, 1], opacity: [0.6, 0, 0.6] }}
                       transition={{ duration: 2, repeat: Infinity }}
-                      className="absolute -inset-2 rounded-full bg-accent/20"
+                      className="absolute -inset-2 rounded-full bg-accent/30"
                     />
                   </div>
                 </motion.div>

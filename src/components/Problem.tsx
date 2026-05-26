@@ -51,15 +51,10 @@ export default function Problem() {
             transition={{ duration: 0.3, delay: 0.2 }}
             className="relative rounded-2xl overflow-hidden"
           >
-            <div className="absolute inset-0">
-              <img
-                src="https://images.pexels.com/photos/5356215/pexels-photo-5356215.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Overwhelmed professional managing tasks"
-                className="w-full h-full object-cover opacity-10"
-                loading="lazy"
-              />
-            </div>
-            <div className="relative bg-white/90 backdrop-blur-sm p-8 border border-red-100/80 shadow-sm">
+            <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-rose-50/50" />
+            <div className="absolute top-0 right-0 w-48 h-48 bg-red-100/60 rounded-full blur-2xl -translate-y-1/4 translate-x-1/4" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-red-200/30 rounded-full blur-xl translate-y-1/4 -translate-x-1/4" />
+            <div className="relative bg-white/80 backdrop-blur-sm p-8 border border-red-100/80 shadow-sm h-full">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center">
                   <AlertTriangle size={20} className="text-red-500" />
@@ -91,15 +86,10 @@ export default function Problem() {
             transition={{ duration: 0.3, delay: 0.3 }}
             className="relative rounded-2xl overflow-hidden"
           >
-            <div className="absolute inset-0">
-              <img
-                src="https://images.pexels.com/photos/7693692/pexels-photo-7693692.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Organized team collaboration"
-                className="w-full h-full object-cover opacity-10"
-                loading="lazy"
-              />
-            </div>
-            <div className="relative bg-white/90 backdrop-blur-sm p-8 border border-emerald-100/80 shadow-sm">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 to-teal-50/50" />
+            <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-100/60 rounded-full blur-2xl -translate-y-1/4 translate-x-1/4" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-emerald-200/30 rounded-full blur-xl translate-y-1/4 -translate-x-1/4" />
+            <div className="relative bg-white/80 backdrop-blur-sm p-8 border border-emerald-100/80 shadow-sm h-full">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center">
                   <CheckCircle2 size={20} className="text-emerald-500" />

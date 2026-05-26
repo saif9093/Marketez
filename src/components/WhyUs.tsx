@@ -68,12 +68,12 @@ export default function WhyUs() {
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.3, delay: 0.1 }}
-            className="lg:col-span-2 relative"
+            className="lg:col-span-2 relative pb-10"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/7693692/pexels-photo-7693692.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Professional team collaboration and CRM usage"
+                src="/whyus_crm.png"
+                alt="Professional working on CRM lead pipeline dashboard"
                 className="w-full h-auto object-cover aspect-[4/5]"
                 loading="lazy"
               />
@@ -97,12 +97,12 @@ export default function WhyUs() {
               </div>
             </div>
 
-            {/* Floating stat 1 — follow-up rate */}
+            {/* Floating stat 1 — follow-up rate (below image, left side) */}
             <motion.div
               initial={{ opacity: 0, y: 16, scale: 0.92 }}
               animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.55 }}
-              className="absolute -bottom-5 -right-4 md:-right-8 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100"
+              className="absolute bottom-0 left-4 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100"
             >
               <div className="flex items-center gap-3">
                 <div className="w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center flex-shrink-0">
@@ -115,12 +115,12 @@ export default function WhyUs() {
               </div>
             </motion.div>
 
-            {/* Floating stat 2 — leads managed */}
+            {/* Floating stat 2 — leads managed (top right, outside image) */}
             <motion.div
               initial={{ opacity: 0, y: -16, scale: 0.92 }}
               animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="absolute -top-4 -right-4 md:-right-8 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100"
+              className="absolute -top-4 right-4 md:-right-6 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100"
             >
               <div className="flex items-center gap-3">
                 <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0">

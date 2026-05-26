@@ -26,16 +26,11 @@ export default function Services() {
 
   return (
     <section id="services" className="section-padding bg-surface relative overflow-hidden">
-      {/* Background texture */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.pexels.com/photos/8062287/pexels-photo-8062287.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt=""
-          className="w-full h-full object-cover opacity-[0.03]"
-          loading="lazy"
-        />
-      </div>
+      {/* Premium gradient mesh background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-surface via-white to-blue-50/30" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/[0.04] rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-navy/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-500/[0.02] rounded-full blur-3xl" />
 
       <div className="container-default relative z-10" ref={ref}>
         <motion.div
