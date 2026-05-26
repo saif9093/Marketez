@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export function useInView(threshold = 0.15) {
+export function useInView(threshold = 0.05) {
   const ref = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
 
@@ -8,6 +8,8 @@ export function useInView(threshold = 0.15) {
     const el = ref.current;
     if (!el) return;
 
+    // rootMargin "0px 0px 120px 0px" pre-triggers animations 120px BEFORE
+    // the section enters the viewport — eliminates white-flash delay
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -15,7 +17,7 @@ export function useInView(threshold = 0.15) {
           observer.unobserve(el);
         }
       },
-      { threshold }
+      { threshold, rootMargin: '0px 0px 120px 0px' }
     );
 
     observer.observe(el);
