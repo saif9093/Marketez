@@ -52,12 +52,14 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-2">
             <a href="#home" className="inline-block mb-5">
-              <div className="bg-white rounded-xl px-4 py-2 inline-block shadow-sm">
-                <img
-                  src="/WhatsApp_Image_2026-05-25_at_6.24.02_PM.jpeg"
-                  alt="Marktez"
-                  className="h-10 w-auto object-contain"
-                />
+              <div className="bg-white rounded-2xl shadow-md p-2 inline-block">
+                <div className="relative overflow-hidden w-48 h-16">
+                  <img
+                    src="/1.png"
+                    alt="Marktez"
+                    className="absolute inset-0 w-full h-full object-contain scale-[1.5]"
+                  />
+                </div>
               </div>
             </a>
             <p className="text-white/40 text-sm leading-relaxed mb-5 max-w-sm">

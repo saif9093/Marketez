@@ -41,11 +41,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center group">
-            <img
-              src="/WhatsApp_Image_2026-05-25_at_6.24.02_PM.jpeg"
-              alt="Marktez"
-              className="h-12 md:h-14 w-auto object-contain object-left"
-            />
+            <div className="relative overflow-hidden w-40 md:w-52 h-14 md:h-16">
+              <img
+                src="/1.png"
+                alt="Marktez"
+                className="absolute inset-0 w-full h-full object-contain scale-[1.55] md:scale-[1.5]"
+              />
+            </div>
           </a>
 
           {/* Desktop nav links */}
