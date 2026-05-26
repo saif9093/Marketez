@@ -61,7 +61,7 @@ export default function Hero() {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
+              transition={{ duration: 0.35, delay: 0.1 }}
               className="font-display text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-bold text-white leading-[1.05] mb-6 text-balance"
             >
               Your Sales Team Should Be Closing Deals,{' '}
@@ -70,7 +70,7 @@ export default function Hero() {
                 <motion.span
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
-                  transition={{ duration: 0.8, delay: 1 }}
+                  transition={{ duration: 0.35, delay: 1 }}
                   className="absolute -bottom-1 left-0 w-full h-1 bg-accent/50 rounded-full origin-left"
                 />
               </span>
@@ -79,7 +79,7 @@ export default function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
+              transition={{ duration: 0.3, delay: 0.25 }}
               className="text-lg md:text-xl text-white/70 leading-relaxed max-w-xl mb-8"
             >
               Every lead represents an opportunity. But when sales teams are busy, follow-ups get
@@ -91,7 +91,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
+              transition={{ duration: 0.3, delay: 0.35 }}
               className="flex flex-col sm:flex-row gap-4 mb-10"
             >
               <a
@@ -114,7 +114,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
+              transition={{ duration: 0.3, delay: 0.5 }}
               className="flex flex-wrap gap-6 md:gap-8"
             >
               {stats.map((stat) => (
@@ -130,7 +130,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.35, delay: 0.3 }}
             className="relative"
           >
             {/* Glow behind card */}

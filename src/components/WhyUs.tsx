@@ -44,7 +44,7 @@ export default function WhyUs() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="mb-10 md:mb-14"
         >
           <span className="inline-block px-4 py-1.5 bg-navy/5 text-navy text-sm font-semibold rounded-full mb-4">
@@ -67,7 +67,7 @@ export default function WhyUs() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.65, delay: 0.1 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
             className="lg:col-span-2 relative"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -119,7 +119,7 @@ export default function WhyUs() {
             <motion.div
               initial={{ opacity: 0, y: -16, scale: 0.92 }}
               animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.7 }}
+              transition={{ duration: 0.5, delay: 0.25 }}
               className="absolute -top-4 -right-4 md:-right-8 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100"
             >
               <div className="flex items-center gap-3">
@@ -176,7 +176,7 @@ export default function WhyUs() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.7 }}
+          transition={{ duration: 0.3, delay: 0.25 }}
           className="grid grid-cols-1 sm:grid-cols-3 gap-4"
         >
           {trustStats.map((stat) => (

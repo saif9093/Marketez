@@ -16,7 +16,19 @@
       "Bash(python3 -c ' *)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git config *)",
+      "Bash(gh auth *)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(security find-internet-password *)",
+      "Bash(open \"https://github.com/settings/tokens/new?scopes=repo&description=MarketEz+Vercel+Deploy\")",
+      "Bash(sed -i '' 's/duration: 1\\\\.4/duration: 0.7/g' *.tsx)",
+      "Bash(sed -i '' 's/duration: 1\\\\.0/duration: 0.4/g' *.tsx)",
+      "Bash(sed -i '' 's/duration: 0\\\\.8/duration: 0.35/g' *.tsx)",
+      "Bash(sed -i '' 's/duration: 0\\\\.7/duration: 0.35/g' *.tsx)",
+      "Bash(sed -i '' 's/duration: 0\\\\.65/duration: 0.3/g' *.tsx)"
     ]
   }
 }

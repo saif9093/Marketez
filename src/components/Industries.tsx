@@ -37,7 +37,7 @@ export default function Industries() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-10 md:mb-14"
         >
           <span className="inline-block px-4 py-1.5 bg-navy/5 text-navy text-sm font-semibold rounded-full mb-4">
@@ -78,7 +78,7 @@ export default function Industries() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.65 }}
+          transition={{ duration: 0.3, delay: 0.65 }}
           className="text-center mt-10"
         >
           <p className="inline-block text-surface-dark/50 text-sm bg-white border border-gray-100 rounded-full px-6 py-2.5 shadow-sm">

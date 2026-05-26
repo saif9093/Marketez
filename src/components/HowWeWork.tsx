@@ -47,7 +47,7 @@ export default function HowWeWork() {
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-14 md:mb-20"
         >
           <span className="inline-block px-4 py-1.5 bg-navy/5 text-navy text-sm font-semibold rounded-full mb-4">
@@ -72,7 +72,7 @@ export default function HowWeWork() {
             <motion.div
               initial={{ scaleX: 0 }}
               animate={isInView ? { scaleX: 1 } : {}}
-              transition={{ duration: 1.4, delay: 0.3, ease: 'easeInOut' }}
+              transition={{ duration: 0.35, delay: 0.3, ease: 'easeInOut' }}
               className="absolute top-[2.6rem] left-[calc(100%/12)] right-[calc(100%/12)] h-[3px] bg-gradient-to-r from-blue-500 via-accent via-emerald-500 via-navy via-violet-500 to-teal-500 rounded-full origin-left"
             />
 
@@ -152,7 +152,7 @@ export default function HowWeWork() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
           className="bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-6 mb-6"
         >
           <div className="text-[10px] font-bold text-surface-dark/30 uppercase tracking-widest text-center mb-5">
@@ -166,7 +166,7 @@ export default function HowWeWork() {
                 <motion.div
                   initial={{ opacity: 0, y: 8 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.35, delay: 0.9 + i * 0.1 }}
+                  transition={{ duration: 0.35, delay: 0.35 + i * 0.1 }}
                   className={`flex items-center gap-2 ${item.color} text-white px-4 py-2.5 rounded-xl shadow-sm`}
                 >
                   <span className="text-white/50 text-[9px] font-bold leading-none">{String(i + 1).padStart(2, '0')}</span>
@@ -186,7 +186,7 @@ export default function HowWeWork() {
                 key={item.label}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ duration: 0.3, delay: 0.9 + i * 0.08 }}
+                transition={{ duration: 0.3, delay: 0.35 + i * 0.08 }}
                 className={`flex items-center gap-2.5 ${item.color} text-white px-3.5 py-2.5 rounded-xl shadow-sm`}
               >
                 <span className="text-white/50 text-[9px] font-bold leading-none">{String(i + 1).padStart(2, '0')}</span>
@@ -200,7 +200,7 @@ export default function HowWeWork() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 1.0 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
           className="relative rounded-2xl overflow-hidden"
         >
           {/* Background */}

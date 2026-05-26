@@ -27,7 +27,7 @@ export default function Problem() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-8 md:mb-10"
         >
           <h2 className="section-heading mb-4 text-balance">
@@ -48,7 +48,7 @@ export default function Problem() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
             className="relative rounded-2xl overflow-hidden"
           >
             <div className="absolute inset-0">
@@ -88,7 +88,7 @@ export default function Problem() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
             className="relative rounded-2xl overflow-hidden"
           >
             <div className="absolute inset-0">

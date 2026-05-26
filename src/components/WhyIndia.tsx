@@ -25,7 +25,7 @@ export default function WhyIndia() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-8 md:mb-10"
         >
           <span className="inline-block px-4 py-1.5 bg-accent/10 text-accent text-sm font-semibold rounded-full mb-4">
@@ -47,7 +47,7 @@ export default function WhyIndia() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
             className="relative"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -94,7 +94,7 @@ export default function WhyIndia() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
           >
             <div className="grid grid-cols-2 gap-3 mb-8">
               {indiaAdvantages.map((advantage, index) => {
