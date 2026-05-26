@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5174)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s http://localhost:5173)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Skill(anthropic-skills:docx)",
+      "Skill(anthropic-skills:docx:*)",
+      "Read(//Users/macbook/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/7e1ff5ba-e7ad-43d7-b068-e1955ae19182/8482db44-ccd4-46ab-acd2-cea97daacafa/skills/docx/**)",
+      "Bash(pandoc --track-changes=all \"/Users/macbook/Downloads/Market_Easy_Website_Development_Brief.docx\" -o /tmp/brief.md)",
+      "Read(//tmp/**)",
+      "Bash(brew install *)",
+      "Bash(python3 -c ' *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
