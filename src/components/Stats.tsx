@@ -51,7 +51,7 @@ export default function Stats() {
       {/* CRM dashboard background */}
       <div className="absolute inset-0">
         <img
-          src="/stats_bg.png"
+          src="/stats_bg.webp"
           alt=""
           className="w-full h-full object-cover opacity-[0.15]"
           loading="lazy"

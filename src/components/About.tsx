@@ -41,7 +41,7 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/about_team.png"
+                src="/about_team.webp"
                 alt="Professional Indian sales development team collaborating in modern office"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 loading="lazy"

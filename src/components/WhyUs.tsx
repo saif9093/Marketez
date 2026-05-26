@@ -72,7 +72,7 @@ export default function WhyUs() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/whyus_crm.png"
+                src="/whyus_crm.webp"
                 alt="Professional working on CRM lead pipeline dashboard"
                 className="w-full h-auto object-cover aspect-[4/5]"
                 loading="lazy"
@@ -97,39 +97,35 @@ export default function WhyUs() {
               </div>
             </div>
 
-            {/* Floating stat 1 — follow-up rate (below image, left side) */}
+            {/* Floating stat 1 — follow-up rate (desktop only) */}
             <motion.div
               initial={{ opacity: 0, y: 16, scale: 0.92 }}
               animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.55 }}
-              className="absolute bottom-0 left-4 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100"
+              className="hidden lg:flex absolute bottom-0 left-4 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100 items-center gap-3"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center flex-shrink-0">
-                  <BarChart3 size={22} className="text-emerald-600" />
-                </div>
-                <div>
-                  <div className="font-display font-bold text-navy text-xl leading-none">95%</div>
-                  <div className="text-[10px] text-surface-dark/40 uppercase tracking-wider mt-0.5">Follow-up Rate</div>
-                </div>
+              <div className="w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center flex-shrink-0">
+                <BarChart3 size={22} className="text-emerald-600" />
+              </div>
+              <div>
+                <div className="font-display font-bold text-navy text-xl leading-none">95%</div>
+                <div className="text-[10px] text-surface-dark/40 uppercase tracking-wider mt-0.5">Follow-up Rate</div>
               </div>
             </motion.div>
 
-            {/* Floating stat 2 — leads managed (top right, outside image) */}
+            {/* Floating stat 2 — leads managed (desktop only) */}
             <motion.div
               initial={{ opacity: 0, y: -16, scale: 0.92 }}
               animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="absolute -top-4 right-4 md:-right-6 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100"
+              className="hidden lg:flex absolute -top-4 right-4 md:-right-6 bg-white rounded-2xl px-5 py-4 shadow-xl border border-gray-100 items-center gap-3"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0">
-                  <Users size={22} className="text-blue-600" />
-                </div>
-                <div>
-                  <div className="font-display font-bold text-navy text-xl leading-none">50K+</div>
-                  <div className="text-[10px] text-surface-dark/40 uppercase tracking-wider mt-0.5">Leads Managed</div>
-                </div>
+              <div className="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0">
+                <Users size={22} className="text-blue-600" />
+              </div>
+              <div>
+                <div className="font-display font-bold text-navy text-xl leading-none">50K+</div>
+                <div className="text-[10px] text-surface-dark/40 uppercase tracking-wider mt-0.5">Leads Managed</div>
               </div>
             </motion.div>
           </motion.div>

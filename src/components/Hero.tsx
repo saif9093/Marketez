@@ -22,10 +22,11 @@ export default function Hero() {
       {/* Full-bleed background image */}
       <div className="absolute inset-0">
         <img
-          src="/hero_bg.png"
+          src="/hero_bg.webp"
           alt=""
           className="w-full h-full object-cover object-center"
           loading="eager"
+          fetchPriority="high"
         />
       </div>
 
@@ -43,8 +44,8 @@ export default function Hero() {
         backgroundSize: '32px 32px',
       }} />
 
-      <div className="container-default relative z-10 py-20 md:py-28">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="container-default relative z-10 pt-24 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-28">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
           {/* Left - Content */}
           <div>
             <motion.div
@@ -62,7 +63,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: 0.1 }}
-              className="font-display text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-bold text-white leading-[1.05] mb-6 text-balance"
+              className="font-display text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-white leading-[1.1] mb-5 text-balance"
             >
               Your Sales Team Should Be Closing Deals,{' '}
               <span className="relative inline-block">
@@ -80,7 +81,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.25 }}
-              className="text-lg md:text-xl text-white/70 leading-relaxed max-w-xl mb-8"
+              className="text-base md:text-lg text-white/70 leading-relaxed max-w-xl mb-7"
             >
               Every lead represents an opportunity. But when sales teams are busy, follow-ups get
               delayed, prospects lose interest, and potential revenue slips away. We help businesses
@@ -115,7 +116,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.5 }}
-              className="flex flex-wrap gap-6 md:gap-8"
+              className="grid grid-cols-2 sm:flex sm:flex-row gap-x-8 gap-y-4"
             >
               {stats.map((stat) => (
                 <div key={stat.label} className="flex items-center gap-2">
@@ -203,7 +204,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.8, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.2 }}
-              className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-accent text-white px-6 py-2.5 rounded-full shadow-lg shadow-accent/30 font-display font-semibold text-sm whitespace-nowrap"
+              className="hidden sm:block absolute -bottom-5 left-1/2 -translate-x-1/2 bg-accent text-white px-5 py-2.5 rounded-full shadow-lg shadow-accent/30 font-display font-semibold text-sm whitespace-nowrap"
             >
               We Nurture. We Qualify. You Close.
             </motion.div>

@@ -38,14 +38,14 @@ export default function Navbar() {
         : 'bg-white shadow-sm border-b border-gray-100'
     }`}>
       <div className="container-default">
-        <div className="flex items-center justify-between h-20 md:h-28">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center group">
-            <div className="relative overflow-hidden w-52 md:w-[340px] h-[72px] md:h-[108px]">
+            <div className="relative w-44 h-12 md:w-60 md:h-16">
               <img
                 src="/1.png"
                 alt="Marktez"
-                className="absolute inset-0 w-full h-full object-contain scale-[1.5]"
+                className="absolute inset-0 w-full h-full object-contain object-left"
               />
             </div>
           </a>

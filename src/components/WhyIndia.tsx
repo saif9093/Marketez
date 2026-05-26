@@ -8,7 +8,6 @@ import {
   Clock,
   Settings,
   Globe,
-  MapPin,
 } from 'lucide-react';
 
 const advantageIcons = [MessageCircle, Wallet, Users, Clock, Settings, Globe];
@@ -52,28 +51,25 @@ export default function WhyIndia() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/india_globe.png"
+                src="/india_globe.webp"
                 alt="World map showing India as global operations hub with connections to all continents"
                 className="w-full h-auto object-cover aspect-[4/3]"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/10 to-transparent" />
 
-              {/* India pin */}
-              <div className="absolute top-[52%] left-[61%] -translate-y-1/2">
+              {/* Subtle pulse ring over India glow */}
+              <div className="absolute top-[48.6%] left-[67.9%] -translate-x-1/2 -translate-y-1/2">
                 <motion.div
-                  initial={{ scale: 0 }}
-                  animate={isInView ? { scale: 1 } : {}}
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={isInView ? { scale: 1, opacity: 1 } : {}}
                   transition={{ duration: 0.4, delay: 0.6 }}
                 >
-                  <div className="relative">
-                    <MapPin size={28} className="text-accent drop-shadow-lg" />
-                    <motion.div
-                      animate={{ scale: [1, 1.8, 1], opacity: [0.6, 0, 0.6] }}
-                      transition={{ duration: 2, repeat: Infinity }}
-                      className="absolute -inset-2 rounded-full bg-accent/30"
-                    />
-                  </div>
+                  <motion.div
+                    animate={{ scale: [1, 2.5, 1], opacity: [0.8, 0, 0.8] }}
+                    transition={{ duration: 2.5, repeat: Infinity }}
+                    className="w-5 h-5 rounded-full bg-accent/60"
+                  />
                 </motion.div>
               </div>
 
