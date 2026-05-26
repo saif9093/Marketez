@@ -38,10 +38,10 @@ export default function Navbar() {
         : 'bg-white shadow-sm border-b border-gray-100'
     }`}>
       <div className="container-default">
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="flex items-center justify-between h-20 md:h-28">
           {/* Logo */}
           <a href="#home" className="flex items-center group">
-            <div className="relative overflow-hidden w-52 md:w-64 h-[72px] md:h-[88px]">
+            <div className="relative overflow-hidden w-52 md:w-[340px] h-[72px] md:h-[108px]">
               <img
                 src="/1.png"
                 alt="Marktez"
